@@ -1,0 +1,87 @@
+body{
+  background-color: #14181c;
+}
+
+#navdiv{
+  display: flex;
+  flex-wrap: nowrap;
+  text-indent: 5px;
+  color:#d8e1e9 ;  
+}
+
+.navbar-overlay{
+  z-index: 10;
+  background: transparent;
+  position: absolute;
+}
+
+#welcome-text{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.timothe {
+  height: 675px;           
+  width: 100%;
+  background-position: center;
+  z-index: 1;
+}
+
+
+
+#popularimg{
+  border-radius: 4px;
+}
+
+#popularimg:hover{
+  border: 2px solid;
+  border-color: #01ac1d;
+  
+}
+
+#info1{
+  border-radius: 3px;
+}
+
+#info2{
+  border-radius: 3px;
+}
+
+#info3{
+  border-radius: 3px;
+}
+
+.infobox{
+  background-color: #445467;
+}
+
+#info1:hover{
+  background-color: #01ac1d;
+  
+}
+
+#info2:hover{
+  background-color:#fe8100;
+
+}
+
+#info3:hover{
+  background-color:#41bcf5;
+}
+
+.story-grid {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.story-card {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+.story-body {
+  background-color: #202931;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+

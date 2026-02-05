@@ -1,0 +1,51 @@
+import timothe from "../assets/images/timothe.jpg";
+
+const Welcome = () => {
+  return (
+    <div className="row">
+      <div className="col-12 col-md-10 col-lg-8 mx-auto position-relative mb-4">
+        <div
+          className="timothe d-flex flex-column justify-content-end text-center"
+          style={{
+            minHeight: "500px",
+            backgroundImage: `
+              radial-gradient(
+                ellipse at center,
+                rgba(15,24,29,0.1) 10%,
+                rgba(15,24,29,0.7) 90%,
+                rgba(20,24,29,1) 100%
+              ),
+              url(${timothe})
+            `,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            padding: "2rem",
+          }}
+        >
+          <h1 id="welcome-text" className="text-white">
+            Track films you’ve watched. Save those you want to see. Tell your
+            friends what’s good.
+          </h1>
+
+          <button
+            className="btn mt-3 align-self-center justify-content-end text-center"
+            style={{
+              backgroundColor: "#01ac1d",
+              borderRadius: "4px",
+              color: "white",
+              fontWeight: "bold",
+            }}
+          >
+            Get Started — it’s free
+          </button>
+
+          <h5 className="mt-4" style={{ color: "#c6dcf1" }}>
+            The Social Network for film lovers
+          </h5>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Welcome;

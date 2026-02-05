@@ -1,0 +1,58 @@
+import React from "react";
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
+  return (
+    <div className="row">
+      <div className="col-2"></div>
+      <div className="col-8">
+        <nav className=" navbar-overlay d-flex align-items-center">
+          <div className="col-2 d-flex">
+            <img
+            style={{
+              height: "50px",
+              width: "50px",
+              marginLeft: "10px",
+              marginTop: "10px",
+            }}
+            src={logo}
+          />
+          <h2
+            className="me-4 solid text-color-white"
+            style={{
+              fontWeight: "700",
+              color: "white",
+              marginLeft: "10px",
+              marginTop: "10px",
+            }}
+          >
+            {" "}
+            Letterboxd
+          </h2>
+          </div>
+          <div
+            id="navdiv"
+            className=" d-flex gap-3 align-items-center mt-3"
+            style={{ fontWeight: "300",marginLeft:"200px"}}
+          >
+            <h6>SIGN IN</h6>
+            <h6>CREATE ACCOUNT</h6>
+            <h6>FILMS</h6>
+            <h6>LISTS</h6>
+            
+            <Link id="navdiv" className="text-decoration-none " to='/Journel' ><h6>JOURNEL</h6></Link>
+            <input
+              style={{ width: "170px", borderRadius: "18px" }}
+              className="form-control search"
+              type="text"
+            />
+          </div>
+        </nav>
+      </div>
+      <div className="col-2"></div>
+    </div>
+  );
+};
+
+export default Navbar;
