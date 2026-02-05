@@ -47,6 +47,7 @@ import s5 from "../assets/images/s5.jpg";
 import s6 from "../assets/images/s6.jpg";
 
 const Popular = () => {
+  console.log("Popular component rendered");
   const moviePosters = [
     { id: 0, image: marty },
     { id: 1, image: nootherchoice },
@@ -782,7 +783,7 @@ const Popular = () => {
 
           <div className="text-center my-4">
             <div className="rounded p-3 mb-3" style={{
-              backgroundImage: 'url(${wrapped})',
+              backgroundImage: `url(${wrapped})`,
               color: 'white'
             }}>
               <h3 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "0.5rem" }}>2025 YEAR IN REVIEW</h3>
@@ -890,7 +891,7 @@ const Popular = () => {
                 </a>
                 {index < 2 && <hr style={{ borderColor: "#445467", opacity: 0.2, marginTop: "1.5rem" }} />}
               </div>
-            ))}=
+            ))}
           </div>
 
 
